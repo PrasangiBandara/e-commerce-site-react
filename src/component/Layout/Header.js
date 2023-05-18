@@ -17,26 +17,13 @@ function Header() {
 
 
   return (
-   
-    // <div style={{backgroundColor:"#7b68ee"}}>
-    //     <div className='container'>
-    //         <div className='header'>
-    //         <div>
-    //         <img src="../../images/logo.jpg"></img>
-    //         </div>
-    //         <div>
-    //         <Link>Items</Link>
-    //         <Link>Brands</Link>
-    //         <Link>Contact</Link>
-    //         </div>
-    //         </div>
-    //     </div>
-    //     </div>
+  
     <>
         <div>
 
         <div>
             <header className="navbar" style={{}}>
+
                 <nav>
                 <ul>
 

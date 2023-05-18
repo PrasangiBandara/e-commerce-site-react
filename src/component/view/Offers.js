@@ -1,12 +1,12 @@
 import React from 'react';
-import HomeLayout from '../Layouts/HomeLayout';
 import '../Dashboard.css'
+import Dashboard from '../Dashboard';
 
 
 function Offers() {
   return (
         <div>
-          Offers
+          <Dashboard/>
         </div>
   )
 }
