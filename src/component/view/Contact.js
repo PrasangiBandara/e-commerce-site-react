@@ -1,12 +1,12 @@
-import React from 'react'
-import Dashboard from '../Dashboard'
+import React from "react";
+import Dashboard from "../Dashboard";
 
 function Contact() {
   return (
     <div>
-      <Dashboard/>
+      <Dashboard />
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

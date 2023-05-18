@@ -1,31 +1,28 @@
-import React from 'react'
-import { itemsList } from '../Dashboard';
-import '../Dashboard.css'
+import React from "react";
+import { itemsList } from "../Dashboard";
+import "../Dashboard.css";
 
 function Phone() {
-
-  const filteredItems = itemsList.filter((item) => item.id === 2 || item.id === 7);
+  const filteredItems = itemsList.filter(
+    (item) => item.id === 2 || item.id === 7
+  );
 
   return (
-    
     <div className="dashboard-container">
-  
       <div className="item-container">
-
-      {filteredItems.map((item) => (
-        <div key={item.id}  className="item-card">
+        {filteredItems.map((item) => (
+          <div key={item.id} className="item-card">
             <img src={item.image} alt={item.name} />
-          <div className="item-info"><h2>{item.name}</h2>
-            <p>{item.price}</p>
+            <div className="item-info">
+              <h2>{item.name}</h2>
+              <p>{item.price}</p>
+              <button>Buy</button>
+            </div>
           </div>
-          
-
-        </div>
-      ))}
+        ))}
       </div>
     </div>
-
-  )
+  );
 }
 
-export default Phone
+export default Phone;

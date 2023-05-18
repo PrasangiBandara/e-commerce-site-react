@@ -1,10 +1,12 @@
-import React from 'react';
-import '../Dashboard.css';
+import React from "react";
+import "../Dashboard.css";
 
 function Footer() {
   return (
-    <div><footer className="footer">Copyright © Prasangi Bandara | 2023</footer></div>
-  )
+    <div>
+      <footer className="footer">Copyright © Prasangi Bandara | 2023</footer>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;

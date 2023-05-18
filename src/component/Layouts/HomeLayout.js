@@ -1,18 +1,18 @@
-import React from 'react'
-import Dashboard from '../Dashboard'
-import Footer from '../Layout/Footer'
-import Header from '../Layout/Header'
-import '../Dashboard.css'
-import { Outlet } from 'react-router-dom'
+import React from "react";
+import Dashboard from "../Dashboard";
+import Footer from "../Layout/Footer";
+import Header from "../Layout/Header";
+import "../Dashboard.css";
+import { Outlet } from "react-router-dom";
 
 function HomeLayout() {
   return (
     <div>
-      <Header/>
+      <Header />
       <Outlet />
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default HomeLayout
+export default HomeLayout;

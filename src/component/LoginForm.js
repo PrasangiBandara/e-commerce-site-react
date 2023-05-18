@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const LoginForm = ({ onLogin }) => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -19,9 +19,9 @@ const LoginForm = ({ onLogin }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Password:', password);
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Password:", password);
     onLogin();
   };
 
@@ -39,7 +39,11 @@ const LoginForm = ({ onLogin }) => {
       <br />
       <label>
         Password:
-        <input type="password" value={password} onChange={handlePasswordChange} />
+        <input
+          type="password"
+          value={password}
+          onChange={handlePasswordChange}
+        />
       </label>
       <br />
       <button type="submit">Login</button>
